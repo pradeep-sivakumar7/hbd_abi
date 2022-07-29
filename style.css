@@ -1,0 +1,80 @@
+.heart-rate {
+  width: 150px;
+  height: 73px;
+  position: absolute;
+  left: 30%;
+  top: 50vh;
+}
+
+body {
+  background-color: #1E1E1E;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#content {
+  display: none;
+}
+
+/* .vertical-center {
+  min-height: 100%;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+} */
+
+.it {
+  font-weight: lighter;
+  /* font-style: italic; */
+  font-size: smaller;
+}
+
+.fade-in {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1E1E1E;;
+  top: 0;
+  right: 0;
+  animation: heartRateIn 2.5s linear infinite;
+}
+
+.fade-out {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -120%;
+  animation: heartRateOut 2.5s linear infinite;
+  background: #1E1E1E;;
+  background: -moz-linear-gradient(left, #1E1E1E 0%, #1E1E1E 50%, #1E1E1E 100%);
+  background: -webkit-linear-gradient(left, #1E1E1E 0%, #1E1E1E 50%, #1E1E1E 100%);
+  background: -o-linear-gradient(left, #1E1E1E 0%, #1E1E1E 50%, #1E1E1E 100%);
+  background: -ms-linear-gradient(left, #1E1E1E 0%, #1E1E1E 50%, #1E1E1E 100%);
+  background: linear-gradient(to right, #1E1E1E 0%, #1E1E1E 80%, #1E1E1E 100%);
+}
+
+@keyframes heartRateIn {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes heartRateOut {
+  0% {
+    left: -120%;
+  }
+  30% {
+    left: -120%;
+  }
+  100% {
+    left: 0;
+  }
+}

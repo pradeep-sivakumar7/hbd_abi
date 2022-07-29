@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-family: 'Montserrat', sans-serif; */
+    margin: 0;
+    color: #340a16;
+}
+
+
+/* Music Container */
+
+.music-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 #340a1680;
+    display: flex;
+    padding: 20px 30px;
+    position: fixed;
+    margin: 30vh 0;
+    z-index: 10;
+    color: white;
+}
+
+.img-container {
+    position: relative;
+    width: 110px;
+}
+
+.img-container::after {
+    content: '';
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, 50%);
+}
+
+.img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotate 3s linear infinite;
+
+    animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    background-color: white;
+    border: 0;
+    color: #1E1E1E;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+    color: #1E1E1E;
+    font-size: 30px;
+}
+
+.action-btn:focus {
+    outline: 0;
+}
+
+.music-info {
+    background-color: white;
+    color: black;
+    border: 2px white;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 150px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+}
+
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.music-info h3 {
+    margin: 0;
+}
+
+.progressing-bar {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress-con {
+    background: #1E1E1E;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/* Playlist */
+
+.playlist .d-flex {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 20px 0;
+    margin-left: 20px;
+}
+
+.vinyl {
+    width: 10%;
+}
+
+.playlist p {
+    /* font-family: var(--Lexend); */
+    font-weight: bold;
+    color: white;
+}
+
+.playlist h5 {
+    /* font-family: 'Brittany Signature', sans-serif; */
+    color: white;
+}
+
+@media (min-width:992px) and (max-width: 1100px) {
+    #music-container {
+        width: 400px;
+    }
+
+    .action-btn {
+        padding: 10px;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .music-container {
+        position: relative;
+        margin: 100px 0;
+    }
+
+    #music-container {
+        width: 350px;
+    }
+
+    .action-btn {
+        padding: 10px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #music-container {
+        width: 350px;
+    }
+
+    .action-btn {
+        padding: 10px;
+        margin: 0 5px;
+    }
+}
