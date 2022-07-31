@@ -11,16 +11,16 @@ body {
     justify-content: center;
     /* font-family: 'Montserrat', sans-serif; */
     margin: 0;
-    color: #340a16;
+    /* color: #340a16; */
 }
 
 
 /* Music Container */
 
 .music-container {
-    background-color: white;
+    background-color: #340a16;
     border-radius: 15px;
-    box-shadow: 0 20px 20px 0 #340a1680;
+    /* box-shadow: 0 20px 20px; */
     display: flex;
     padding: 20px 30px;
     position: fixed;
@@ -54,7 +54,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: rotate 3s linear infinite;
+    animation: rotate 5s linear infinite;
 
     animation-play-state: paused;
 }
@@ -78,12 +78,13 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 1;
+    margin-left: 20px;
 }
 
 .action-btn {
-    background-color: white;
+    background-color: #340a1680;
     border: 0;
-    color: #1E1E1E;
+    color: white;
     font-size: 20px;
     cursor: pointer;
     padding: 10px;
@@ -91,7 +92,7 @@ body {
 }
 
 .action-btn.action-btn-big {
-    color: #1E1E1E;
+    color: white;
     font-size: 30px;
 }
 
@@ -100,8 +101,8 @@ body {
 }
 
 .music-info {
-    background-color: white;
-    color: black;
+    /* background-color: white; */
+    color: white;
     border: 2px white;
     border-radius: 15px 15px 0 0;
     position: absolute;
@@ -125,7 +126,7 @@ body {
 }
 
 .progressing-bar {
-    background-color: #fff;
+    background-color: grey;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
@@ -134,7 +135,7 @@ body {
 }
 
 .progress-con {
-    background: #1E1E1E;
+    background: white;
     border-radius: 5px;
     height: 100%;
     width: 0%;
@@ -151,13 +152,14 @@ body {
 }
 
 .vinyl {
+    background-color: white;
     width: 10%;
 }
 
 .playlist p {
     /* font-family: var(--Lexend); */
     font-weight: bold;
-    color: white;
+     color: white;
 }
 
 .playlist h5 {
@@ -202,3 +204,4 @@ body {
         margin: 0 5px;
     }
 }
+
