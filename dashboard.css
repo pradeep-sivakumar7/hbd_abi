@@ -152,8 +152,9 @@ body {
 }
 
 .vinyl {
-    background-color: white;
-    width: 10%;
+    /* background-color: white; */
+    width: 65px;
+    height: 65px;
 }
 
 .playlist p {
@@ -205,3 +206,12 @@ body {
     }
 }
 
+.bt{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#playlistAll{
+    display: none;
+}

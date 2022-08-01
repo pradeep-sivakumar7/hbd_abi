@@ -7,14 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
@@ -23,14 +20,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
-    <title>A Love Story By Pradeep - Login</title>
+    <title>A Love Story By Pradeep</title>
     <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/45-relationship-love/red-heart.png"
         type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -53,12 +55,12 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home" href="home.html" tabindex="-1" aria-disabled="true"><i
-                                        class="fa-solid fa-home"></i></a>
+                                <a class="nav-link active" id="home" href="home.html" tabindex="-1"
+                                    aria-disabled="true"><i class="fa-solid fa-home"></i></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" ><i class="fa-solid fa-cake-candles"></i></a>
+                                <a class="nav-link" aria-current="page"><i class="fa-solid fa-cake-candles"></i></a>
                             </li>
 
 
@@ -75,28 +77,28 @@
             </nav>
         </header>
 
-        <div class="container my-5" id="music">
+        <div class="container mt-5" id="music">
             <div class="row mx-lg-5">
                 <div class="row d-flex">
-                    <div class="col-lg-6 px-xl-5">
+                    <div class="col-lg-6 m-auto px-xl-5">
                         <div class="music-container" id="music-container">
                             <div class="music-info">
                                 <h3 id="title"></h3>
                                 <p id="artist" class="text-secondary"></p>
                                 <div class="progressing-bar" id="progress-container">
-                                    <div class="progress-con" id="progress"></div> 
+                                    <div class="progress-con" id="progress"></div>
                                 </div>
                             </div>
-        
-        
+
+
                             <!-- Audio -->
                             <audio src="" id="audio"></audio>
-        
+
                             <!-- Cover-->
                             <div class="img-container">
                                 <img src="" alt="music-cover" id="cover">
                             </div>
-        
+
                             <!-- Navigations -->
                             <div class="navigation">
                                 <button id="prev" class="action-btn">
@@ -109,68 +111,77 @@
                                     <i class="fas fa-forward"></i>
                                 </button>
                             </div>
+
+                        </div>
+                        <div class="container text-white" >
+                            <div id="viewToggle">View Playlist <span class="btn btn-sm text-white fa-solid fa-angle-right"></span></div>
                         </div>
                     </div>
-        
+
                     <!-- Playlist -->
-                  <div class="col-lg-6 col-12 playlist">
-                    <div class="col mx-xl-5 mx-lg-0 list">
-                        <div class="d-flex my-5" id="0" onclick="clicked(this.id)">
-                            <img src="Angry.jpg" alt="" class="vinyl mx-4">
-                            <div class="col">
-                              <h5 class="my-auto">Angry</h5>
-                              <p class="my-auto">IanD.</p>
-                            </div> 
-                        </div>
-                        <div class="d-flex my-5" id="1" onclick="clicked(this.id)">
-                            <img src="Culture Code.jpg" alt="" class="vinyl mx-4">
-                            <div class="col">
-                              <h5 class="my-auto">Culture Code</h5> 
-                              <p class="my-auto">Fairytale (feat. Amanda Collis)</p>
-                            </div> 
+                    <div class="col-lg-6 col-12 playlist">
+                        <div class="col mx-xl-5 mx-lg-0 list">
                             
-        
-                        </div>
-                        <div class="d-flex my-5" id="2" onclick="clicked(this.id)">
-                            <img src="Dstrion.jpg" alt="" class="vinyl mx-4">
-                            <div class="col">
-                              <h5 class="my-auto">Dstrion</h5>  
-                              <p class="my-auto">Alibi (ft. Heleen)</p>
-                            </div> 
-                        </div>
-                        <div class="d-flex my-5" id="3" onclick="clicked(this.id)">
-                            <img src="Galore.jpg" alt="" class="vinyl mx-4">
-                            <div class="col">
-                              <h5 class="my-auto">Galore</h5>  
-                              <p class="my-auto">Noah North</p>
-                            </div> 
-                        </div>
-                        <div class="d-flex my-5" id="4" onclick="clicked(this.id)">
-                            <img src="Netrum.jpg" alt="" class="vinyl mx-4">
-                            <div class="col">
-                              <h5 class="my-auto">Netrum</h5>
-                              <p class="my-auto">Colorblind (ft. Halvorsen)</p>
-                            </div> 
-                            
-                        </div>
-                        <div class="d-flex my-5" id="5" onclick="clicked(this.id)">
-                            <img src="Tinoma.jpg" alt="" class="vinyl  mx-4">
-                            <div class="col">
-                              <h5 class="my-auto">Tinoma</h5> 
-                              <p class="my-auto">Find You</p>
-                            </div> 
-                            
-                        </div>
-                        <div class="d-flex my-5" id="6" onclick="clicked(this.id)">
-                            <img src="Cmon.jpg" alt="" class="vinyl  mx-4">
-                            <div class="col">
-                              <h5 class="my-auto">Cmon</h5>  
-                              <p class="my-auto">Xavier Weeks</p>
-                            </div> 
+
+                            <div id="playlistAll">
+                                <div id="num" class="d-flex text-white"></div>
+                                <div class="d-flex mb-4" id="0" onclick="clicked(this.id)">
+                                    <img src="images/Bae.jpg" alt="" class="vinyl mx-4">
+                                    <div class="col">
+                                        <h5 class="my-auto">Bae</h5>
+                                        <p class="my-auto text-secondary">Anirudh Ravichandar</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4" id="1" onclick="clicked(this.id)">
+                                    <img src="Culture Code.jpg" alt="" class="vinyl mx-4">
+                                    <div class="col">
+                                        <h5 class="my-auto">Culture Code</h5>
+                                        <p class="my-auto text-secondary">Fairytale (feat. Amanda Collis)</p>
+                                    </div>
+    
+    
+                                </div>
+                                <div class="d-flex my-4" id="2" onclick="clicked(this.id)">
+                                    <img src="Dstrion.jpg" alt="" class="vinyl mx-4">
+                                    <div class="col">
+                                        <h5 class="my-auto">Dstrion</h5>
+                                        <p class="my-auto text-secondary">Alibi (ft. Heleen)</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4" id="3" onclick="clicked(this.id)">
+                                    <img src="Galore.jpg" alt="" class="vinyl mx-4">
+                                    <div class="col">
+                                        <h5 class="my-auto">Galore</h5>
+                                        <p class="my-auto text-secondary">Noah North</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4" id="4" onclick="clicked(this.id)">
+                                    <img src="Netrum.jpg" alt="" class="vinyl mx-4">
+                                    <div class="col">
+                                        <h5 class="my-auto">Netrum</h5>
+                                        <p class="my-auto text-secondary">Colorblind (ft. Halvorsen)</p>
+                                    </div>
+    
+                                </div>
+                                <div class="d-flex my-4" id="5" onclick="clicked(this.id)">
+                                    <img src="Tinoma.jpg" alt="" class="vinyl  mx-4">
+                                    <div class="col">
+                                        <h5 class="my-auto">Tinoma</h5>
+                                        <p class="my-auto text-secondary">Find You</p>
+                                    </div>
+    
+                                </div>
+                                <div class="d-flex my-4" id="6" onclick="clicked(this.id)">
+                                    <img src="Cmon.jpg" alt="" class="vinyl  mx-4">
+                                    <div class="col">
+                                        <h5 class="my-auto">Cmon</h5>
+                                        <p class="my-auto text-secondary">Xavier Weeks</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                  </div>
-              </div>
+                </div>
             </div>
         </div>
 

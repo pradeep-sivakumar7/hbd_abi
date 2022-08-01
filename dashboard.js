@@ -20,50 +20,77 @@ const cover = document.getElementById('cover');
 
 // Song titles
 
-const songs = ['Bae',
-				'Dhimu Dhimu',
-				'En-Jeevan',
-				'Ennadi-Maayavi-Nee',
-				'Idhazhin-oram',
-				'Innum-Konjam-Neram',
-				'Kannazhaga',
-				'Maalai-Mangum-Neram',
-				'Manamaganin-Sathiyam',
-				'Marakkavillayae',
-				'Mehabooba',
-				'Mellinamae-Mellinamae',
-				'Munbe-Va',
-				'Naalu-Nimisam',
-				'Naan-Nee',
-				'Naan-Un',
-				'Neeyum-Naanum-Anbe',
-				'Nenjukkul-Peithidum',
-				'NewYork-Nagaram',
-				'Oru-Devadhai',
-				'Pachchai-Nirame',
-				'Partha-Muthal',
-				'Pirai-Thedum',
-				'Pookal-Pookum',
-				'Snehidhane',
-				'Suttum-Vizhi',
-				'Thaarame-Thaarame',
-				'Thalli-Pogathey',
-				'Un-Vizhigalil',
-				'Uyire-Un-Uyirena',
-				'Vaseegara',
-				'Yaanji'
+const songs = ['Bae',//
+				'Dhimu Dhimu',//
+				'En-Jeevan',//
+				'Ennadi-Maayavi-Nee',//
+				'Idhazhin-oram',//
+				'Innum-Konjam-Neram',//
+				'Kannazhaga',//
+				'Maalai-Mangum-Neram',//
+				'Manamaganin-Sathiyam',//
+				'Marakkavillayae',//
+				'Mehabooba',//
+				'Mellinamae-Mellinamae',//
+				'Munbe-Va',//
+				'Naalu-Nimisam',//
+				'Naan-Nee',//
+				'Naan-Un',//
+				'Neeyum-Naanum-Anbe',//
+				'Nenjukkul-Peithidum',//
+				'NewYork-Nagaram',//
+				'Oru-Devadhai',//
+				'Pachchai-Nirame',//
+				'Partha-Muthal',//
+				'Pirai-Thedum',//
+				'Pookal-Pookum',//
+				'Snehidhane',//
+				'Suttum-Vizhi',//
+				'Thaarame-Thaarame',//
+				'Thalli-Pogathey',//
+				'Un-Vizhigalil',//
+				'Uyire-Un-Uyirena',//
+				'Vaseegara',//
+				'Yaanji'//
 ]; 
 console.log(songs.length);
 
-const artists = ['IanD.', 
-				'Fairytale (feat. Amanda Collis)', 
-				'Alibi (ft. Heleen)', 
-				'Noah North', 
-				'Colorblind (ft. Halvorsen) ', 
-				' Find You ', 
-				'Xavier Weeks'];
+const artists = ['Anirudh Ravichandar',
+				 'Harris Jayaraj',
+				 'G. V. Prakash',
+				 'Santhosh Narayanan',
+				 'Anirudh Ravichandar',
+				 'A. R. Rahman',
+				 'Anirudh Ravichandar',
+				 'Ranina Reddy',
+				 'A. R. Rahman',
+				 'Anirudh Ravichandar',
+				 'Ravi Basrur',
+				 'Harish Ragavendra',
+				 'A. R. Rahman',
+				 'G. V. Prakash',
+				 'Santhosh Narayanan',
+				 'A. R. Rahman',
+				 'Hip Hop Thamizha',
+				 'Harris Jayaraj',
+				 'A. R. Rahman',
+				 'Yuvan Shankar Raja',
+				 'A. R. Rahman',
+				 'Harris Jayaraj',
+				 'G. V. Prakash',
+				 'G. V. Prakash',
+				 'A. R. Rahman',
+				 'Harris Jayaraj',
+				 'Ghibran',
+				 'A. R. Rahman',
+				 'Anirudh Ravichandar',
+				 'Anirudh Ravichandar',
+				 'Harris Jayaraj',
+				 'Sam C. S.'
+				];
 
 let songIndex = 0;
+console.log(artists.length);
 
 loadSong(songs[songIndex]);
 
@@ -196,4 +223,22 @@ function rest() {
 function rest1(){
 	document.getElementById("home").classList.add("active");
 	document.getElementById("music").classList.remove("active");
+}
+
+
+document.getElementById("num").textContent = `Total Songs : ${songs.length}`;
+
+let show = false;
+
+document.getElementById("viewToggle").onclick = ()=>{
+	if(!show){
+		document.getElementById("playlistAll").style.display = "block";
+		document.getElementById("viewToggle").innerHTML = "Hide Playlist <span class='btn btn-sm text-white fa-solid fa-angle-down'></span>";
+		show = true;
+	}
+	else{
+		document.getElementById("playlistAll").style.display = "none";
+		document.getElementById("viewToggle").innerHTML = "View Playlist <span class='btn btn-sm text-white fa-solid fa-angle-right'></span>";
+		show = false;
+	}
 }
