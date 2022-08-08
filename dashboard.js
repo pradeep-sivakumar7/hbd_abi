@@ -1,6 +1,6 @@
 $(window).on('load', function () {
-    $("#loader").fadeOut(1000);
-    $("#content").fadeIn(1000);
+	$("#loader").fadeOut(1000);
+	$("#content").fadeIn(1000);
 });
 
 //music player
@@ -21,88 +21,88 @@ const cover = document.getElementById('cover');
 // Song titles
 
 const songs = ['Bae',//
-				'Dhimu Dhimu',//
-				'En-Jeevan',//
-				'Ennadi-Maayavi-Nee',//
-				'Idhazhin-oram',//
-				'Innum-Konjam-Neram',//
-				'Kannazhaga',//
-				'Maalai-Mangum-Neram',//
-				'Manamaganin-Sathiyam',//
-				'Marakkavillayae',//
-				'Mehabooba',//
-				'Mellinamae-Mellinamae',//
-				'Munbe-Va',//
-				'Naalu-Nimisam',//
-				'Naan-Nee',//
-				'Naan-Un',//
-				'Neeyum-Naanum-Anbe',//
-				'Nenjukkul-Peithidum',//
-				'NewYork-Nagaram',//
-				'Oru-Devadhai',//
-				'Pachchai-Nirame',//
-				'Partha-Muthal',//
-				'Pirai-Thedum',//
-				'Pookal-Pookum',//
-				'Snehidhane',//
-				'Suttum-Vizhi',//
-				'Thaarame-Thaarame',//
-				'Thalli-Pogathey',//
-				'Un-Vizhigalil',//
-				'Uyire-Un-Uyirena',//
-				'Vaseegara',//
-				'Yaanji'//
-]; 
+	'Dhimu Dhimu',//
+	'En-Jeevan',//
+	'Ennadi-Maayavi-Nee',//
+	'Idhazhin-oram',//
+	'Innum-Konjam-Neram',//
+	'Kannazhaga',//
+	'Maalai-Mangum-Neram',//
+	'Manamaganin-Sathiyam',//
+	'Marakkavillayae',//
+	'Mehabooba',//
+	'Mellinamae-Mellinamae',//
+	'Munbe-Va',//
+	'Naalu-Nimisam',//
+	'Naan-Nee',//
+	'Naan-Un',//
+	'Neeyum-Naanum-Anbe',//
+	'Nenjukkul-Peithidum',//
+	'NewYork-Nagaram',//
+	'Oru-Devadhai',//
+	'Pachchai-Nirame',//
+	'Partha-Muthal',//
+	'Pirai-Thedum',//
+	'Pookal-Pookum',//
+	'Snehidhane',//
+	'Suttum-Vizhi',//
+	'Thaarame-Thaarame',//
+	'Thalli-Pogathey',//
+	'Un-Vizhigalil',//
+	'Uyire-Un-Uyirena',//
+	'Vaseegara',//
+	'Yaanji'//
+];
 console.log(songs.length);
 
 const artists = ['Anirudh Ravichandar',
-				 'Harris Jayaraj',
-				 'G. V. Prakash',
-				 'Santhosh Narayanan',
-				 'Anirudh Ravichandar',
-				 'A. R. Rahman',
-				 'Anirudh Ravichandar',
-				 'Ranina Reddy',
-				 'A. R. Rahman',
-				 'Anirudh Ravichandar',
-				 'Ravi Basrur',
-				 'Harish Ragavendra',
-				 'A. R. Rahman',
-				 'G. V. Prakash',
-				 'Santhosh Narayanan',
-				 'A. R. Rahman',
-				 'Hip Hop Thamizha',
-				 'Harris Jayaraj',
-				 'A. R. Rahman',
-				 'Yuvan Shankar Raja',
-				 'A. R. Rahman',
-				 'Harris Jayaraj',
-				 'G. V. Prakash',
-				 'G. V. Prakash',
-				 'A. R. Rahman',
-				 'Harris Jayaraj',
-				 'Ghibran',
-				 'A. R. Rahman',
-				 'Anirudh Ravichandar',
-				 'Anirudh Ravichandar',
-				 'Harris Jayaraj',
-				 'Sam C. S.'
-				];
+	'Harris Jayaraj',
+	'G. V. Prakash',
+	'Santhosh Narayanan',
+	'Anirudh Ravichandar',
+	'A. R. Rahman',
+	'Anirudh Ravichandar',
+	'Ranina Reddy',
+	'A. R. Rahman',
+	'Anirudh Ravichandar',
+	'Ravi Basrur',
+	'Harish Ragavendra',
+	'A. R. Rahman',
+	'G. V. Prakash',
+	'Santhosh Narayanan',
+	'A. R. Rahman',
+	'Hip Hop Thamizha',
+	'Harris Jayaraj',
+	'A. R. Rahman',
+	'Yuvan Shankar Raja',
+	'A. R. Rahman',
+	'Harris Jayaraj',
+	'G. V. Prakash',
+	'G. V. Prakash',
+	'A. R. Rahman',
+	'Harris Jayaraj',
+	'Ghibran',
+	'A. R. Rahman',
+	'Anirudh Ravichandar',
+	'Anirudh Ravichandar',
+	'Harris Jayaraj',
+	'Sam C. S.'
+];
 
 let songIndex = 0;
 console.log(artists.length);
 
 loadSong(songs[songIndex]);
 
-function loadSong(song){
-	title.innerText = song.replaceAll("-"," ");;
+function loadSong(song) {
+	title.innerText = song.replaceAll("-", " ");;
 	artist.innerText = artists[songIndex];
 	audio.src = `music/${song}.mp3`;
 	cover.src = `images/${song}.jpg`;
 }
 
 // Play
-function playSong(){
+function playSong() {
 	musicContainer.classList.add('play');
 
 	playBtn.querySelector('i.fas').classList.remove('fa-play');
@@ -113,7 +113,7 @@ function playSong(){
 
 
 // Pause
-function pauseSong(){
+function pauseSong() {
 	musicContainer.classList.remove('play');
 
 	playBtn.querySelector('i.fas').classList.add('fa-play');
@@ -124,7 +124,7 @@ function pauseSong(){
 
 // Previous
 
-function prevSong(){
+function prevSong() {
 	songIndex--;
 
 	if (songIndex < 0) {
@@ -138,7 +138,7 @@ function prevSong(){
 
 // Next
 
-function nextSong(){
+function nextSong() {
 	songIndex++;
 
 	if (songIndex > songs.length - 1) {
@@ -152,11 +152,11 @@ function nextSong(){
 
 
 // Update progress bar
-function updateProgress(e){
-	const {duration, currentTime} = e.srcElement;
-	const progressPercent = (currentTime/ duration) *100;
+function updateProgress(e) {
+	const { duration, currentTime } = e.srcElement;
+	const progressPercent = (currentTime / duration) * 100;
 	progress.style.width = `${progressPercent}%`;
-	
+
 }
 
 
@@ -165,19 +165,19 @@ function setProgress(e) {
 	const width = this.clientWidth;
 	const clickX = e.offsetX;
 	const duration = audio.duration;
-  
+
 	audio.currentTime = (clickX / width) * duration;
-  }
+}
 
 let currentIndex = songIndex;
 
-function clicked(clicked_id){
+function clicked(clicked_id) {
 	songIndex = clicked_id;
 	loadSong(songs[songIndex]);
 
 	const isPlaying = musicContainer.classList.contains('play');
 
-	if ((clicked_id == currentIndex) && isPlaying){
+	if ((clicked_id == currentIndex) && isPlaying) {
 		pauseSong();
 	} else {
 		playSong();
@@ -190,10 +190,10 @@ function clicked(clicked_id){
 
 // Event Listener
 
-playBtn.addEventListener('click', () =>{
+playBtn.addEventListener('click', () => {
 	const isPlaying = musicContainer.classList.contains('play');
 
-	if (isPlaying){
+	if (isPlaying) {
 		pauseSong();
 	} else {
 		playSong();
@@ -220,25 +220,26 @@ function rest() {
 	document.getElementById("music").classList.add("active");
 }
 
-function rest1(){
+function rest1() {
 	document.getElementById("home").classList.add("active");
 	document.getElementById("music").classList.remove("active");
 }
 
 
-document.getElementById("num").textContent = `Total Songs : ${songs.length}`;
+// document.getElementById("num").textContent = `Total Songs : ${songs.length}`;
 
 let show = false;
 
-document.getElementById("viewToggle").onclick = ()=>{
-	if(!show){
+document.getElementById("viewToggle").onclick = () => {
+	if (!show) {
 		document.getElementById("playlistAll").style.display = "block";
 		document.getElementById("viewToggle").innerHTML = "Hide Playlist <span class='btn btn-sm text-white fa-solid fa-angle-down'></span>";
 		show = true;
 	}
-	else{
+	else {
 		document.getElementById("playlistAll").style.display = "none";
 		document.getElementById("viewToggle").innerHTML = "View Playlist <span class='btn btn-sm text-white fa-solid fa-angle-right'></span>";
 		show = false;
 	}
 }
+
