@@ -34,5 +34,9 @@
   height: 20rem;
   border-radius: 5px;
   border: 0;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+hr{
+  color: white;
 }

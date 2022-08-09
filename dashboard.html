@@ -59,8 +59,8 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home" href="home.html" tabindex="-1"
-                                    aria-disabled="true"><i class="fa-solid fa-home"></i></a>
+                                <a class="nav-link active" id="home" tabindex="-1" aria-disabled="true"><i
+                                        class="fa-solid fa-home"></i></a>
                             </li>
 
                             <li class="nav-item">
@@ -80,6 +80,7 @@
 
             </nav>
         </header>
+        <div class="mt-5"></div>
 
 
         <div class="container my-5" id="music">
@@ -118,9 +119,11 @@
                             </div>
 
                         </div>
-                        <div class="container text-white">
-                            <button class="btn btn-sm btn-primary" id="viewToggle">View Playlist <span
+                        <div class="container text-center text-white">
+                            <button class="btn btn-sm btn-primary me-3" id="viewToggle">View Playlist <span
                                     class="btn btn-sm text-white fa-solid fa-angle-right"></span></button>
+                            <button class="btn btn-sm btn-success py-1">Love you <span
+                                    class="btn btn-sm colo fa-solid fa-heart" id="heart"></span></button>
                         </div>
                     </div>
 
@@ -198,7 +201,7 @@
                                 <div class="d-flex mb-4" id="8" onclick="clicked(this.id)">
                                     <img src="images/Manamaganin-Sathiyam.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
-                                        <h5 class="my-auto">Manamaganin-Sathiyam</h5>
+                                        <h5 class="my-auto">Manamaganin Sathiyam</h5>
                                         <p class="my-auto text-secondary">A. R. Rahman</p>
                                     </div>
                                 </div>
@@ -393,10 +396,11 @@
                 </div>
             </div>
         </div>
+        <hr>
 
         <!-- travel -->
         <div class="container my-5">
-            <p class="display-4 text-center text-white">Every Travel</p>
+            <h5 class="display-4 text-center text-white">Every Travel</h5>
             <div id="carouselExampleIndicators2" class="carousel slide carousel-dark carousel-fade"
                 data-bs-ride="carousel">
 
@@ -569,11 +573,12 @@
                 </button>
             </div>
         </div>
+        <hr>
 
 
         <!-- places -->
         <div class="container my-5">
-            <p class="display-4 text-center text-white">Meet Up Locations</p>
+            <p class="display-4 text-center text-white">Every Meet-ups</p>
             <div id="carouselExampleIndicators1" class="carousel slide carousel-dark carousel-fade"
                 data-bs-ride="carousel">
 
@@ -717,6 +722,7 @@
                 </button>
             </div>
         </div>
+        <hr>
 
         <script src="dashboard.js"></script>
 

@@ -242,4 +242,19 @@ document.getElementById("viewToggle").onclick = () => {
 		show = false;
 	}
 }
+let g = true;
+setInterval(()=>{
+	
+	let h = document.getElementById("heart");
+	
+	if(g){
+		h.style.color = "red";
+		g = false;
+	}
+
+	else{
+		h.style.color = "white";
+		g = true;
+	}
+},750)
 
