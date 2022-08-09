@@ -232,29 +232,39 @@ let show = false;
 
 document.getElementById("viewToggle").onclick = () => {
 	if (!show) {
-		document.getElementById("playlistAll").style.display = "block";
+		$("#playlistAll").fadeIn(1000);
+		// document.getElementById("playlistAll").style.display = "block";
 		document.getElementById("viewToggle").innerHTML = "Hide Playlist <span class='btn btn-sm text-white fa-solid fa-angle-down'></span>";
+		// display.getElementById("playlistAll").style.transition = "width 2s";
 		show = true;
 	}
 	else {
-		document.getElementById("playlistAll").style.display = "none";
+		$("#playlistAll").fadeOut(1000);
+		// document.getElementById("playlistAll").style.display = "none";
 		document.getElementById("viewToggle").innerHTML = "View Playlist <span class='btn btn-sm text-white fa-solid fa-angle-right'></span>";
 		show = false;
 	}
 }
+
+
+
 let g = true;
-setInterval(()=>{
-	
+setInterval(() => {
+
 	let h = document.getElementById("heart");
-	
-	if(g){
+
+	if (g) {
 		h.style.color = "red";
 		g = false;
 	}
 
-	else{
+	else {
 		h.style.color = "white";
 		g = true;
 	}
-},750)
+}, 750)
 
+setInterval(()=> {
+	const randomColor = Math.floor(Math.random()*16777215).toString(16);
+	document.getElementById("hea").style.color = "#" + randomColor;    
+},1000)

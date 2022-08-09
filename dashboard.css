@@ -5,7 +5,7 @@
 
 body {
     height: 100%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -148,20 +148,20 @@ body {
     background-color: #1E1E1E;
     border-radius: 10px;
     padding: 20px 0;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .vinyl {
     /* background-color: white; */
-    width: 65px;
-    height: 65px;
-    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
 }
 
 .playlist p {
     /* font-family: var(--Lexend); */
     font-weight: bold;
-     color: white;
+    color: white;
 }
 
 .playlist h5 {
@@ -208,18 +208,29 @@ body {
     }
 }
 
-.bt{
+.bt {
     background-color: transparent;
     border: none;
     color: white;
 }
 
-#playlistAll{
+#playlistAll {
     display: none;
 }
 
-.colo{
+.colo {
     color: white;
     /* border: 0; */
 
 }
+
+.hh {
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
