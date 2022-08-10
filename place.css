@@ -27,6 +27,8 @@
 .card {
   /* width: 20rem; */
   margin: auto;
+  /* display: grid; */
+
 }
 
 .map {

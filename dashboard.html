@@ -52,10 +52,10 @@
     <div id="content">
         <!-- header -->
         <header>
-            <nav class="navbar navbar-expand navbar-dark text-center">
+            <nav style="border-bottom: 2px solid grey" class="navbar navbar-expand navbar-dark text-center">
                 <div class="container">
 
-                    <a class="navbar-brand" href="#">A Love Story <i class="fa-solid fa-heart" id="hea"></i></a>
+                    <a class="navbar-brand" href="#">A Love Story <i class="fa-solid fa-heart" id="heart"></i></a>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
@@ -80,15 +80,16 @@
 
             </nav>
         </header>
-        <div class="mt-5"></div>
+        <!-- <div class=""><br></div> -->
 
 
-        <div class="container my-5" id="music">
-            <h5 class="display-5 my-5 text-center text-white hh">Music Player</h5><div class="my-3"> <br></div>
+        <div class="container mb-5" id="music">
+            <h5 class="display-5 my-5 text-center text-white hh">Music Player</h5>
+            <div class="my-4"><br> <br></div>
             <div class="row">
                 <div class="row">
-                    <div class="m-auto">
-                        <div class="music-container" id="music-container">
+                    <div class="">
+                        <div class="music-container m-auto my-5" id="music-container">
                             <div class="music-info">
                                 <h3 id="title"></h3>
                                 <p id="artist" class="text-secondary"></p>
@@ -121,10 +122,12 @@
 
                         </div>
                         <div class="container text-center text-white mb-4">
-                            <button class="btn btn-sm btn-primary me-3" id="viewToggle">View Playlist <span
+                            <button class="btn btn-sm btn-primary me-2 my-2" id="viewToggle">View Playlist <span
                                     class="btn btn-sm text-white fa-solid fa-angle-right"></span></button>
-                            <button class="btn btn-sm btn-success">Love you <span
-                                    class="btn btn-sm colo fa-solid fa-heart" id="heart"></span></button>
+                            <a class="btn btn-sm btn-success"
+                                href="https://open.spotify.com/playlist/41cNHnADfxpYfAxVmcjvm8?si=11d2950f1a844992"
+                                target="_blank">Open in Spotify <span
+                                    class="fa-solid text-white btn btn-sm fa-arrow-up-right-from-square"></span></a>
                         </div>
                     </div>
 
@@ -397,12 +400,25 @@
                 </div>
             </div>
         </div>
+
         <hr>
 
         <!-- travel -->
         <div class="container my-5">
-            <h5 class="display-5 text-center text-white hh">Every Travel</h5>
-            <div id="carouselExampleIndicators2" class="carousel slide carousel-dark carousel-fade"
+
+            <h5 class="display-5 text-center text-white hh">Every Travel</h5><div class="my-3"><br></div>
+
+            <figure class="bg-white px-3 pt-3 pb-1 rounded m-auto" style="border-left: .40rem solid #a34e78; width: 20rem;">
+                <blockquote class="blockquote">
+                    <p>
+                        <i class="fa-solid  fa-quote-left"></i> உன்னோட நடக்கின்ற சிறு தூரம் கிடைக்கின்ற சில நேரம் என் வாழ்வின் வரமாகவே...
+                    </p>
+                </blockquote>
+            </figure>
+
+            <div class="my-3"><br></div>
+
+            <div id="carouselExampleIndicators2" class="carousel slide carousel-dark carousel-fade my-4"
                 data-bs-ride="carousel">
 
                 <div class="carousel-inner">
@@ -579,7 +595,18 @@
 
         <!-- places -->
         <div class="container my-5">
-            <p class="display-5 text-center text-white hh">Every Meet-ups</p>
+            <p class="display-5 text-center text-white hh">Every Meet-ups</p><div class="my-3"><br></div>
+
+            <figure class="bg-white px-3 pt-3 pb-1 rounded m-auto" style="border-left: .40rem solid #a34e78; width: 20rem;">
+                <blockquote class="blockquote">
+                    <p>
+                        <i class="fa-solid  fa-quote-left"></i> உன்னோட நடக்கின்ற சிறு தூரம் கிடைக்கின்ற சில நேரம் என் வாழ்வின் வரமாகவே...
+                    </p>
+                </blockquote>
+            </figure>
+
+            <div class="my-3"><br></div>
+
             <div id="carouselExampleIndicators1" class="carousel slide carousel-dark carousel-fade"
                 data-bs-ride="carousel">
 
