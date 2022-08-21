@@ -7,14 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- bootstrap -->
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <!-- <link rel="stylesheet" href="style.css"> -->
@@ -25,19 +21,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
     <title>A Love Story By Pradeep</title>
-    <link
-        href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/640px-Heart_coraz%C3%B3n.svg.png"
-        rel="shortcut icon">
+    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/45-relationship-love/red-heart.png"
+        type="image/x-icon">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="place.css">
+    
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -53,25 +48,24 @@
     <div id="content">
         <!-- header -->
         <header>
-            <nav style="border-bottom: 2px solid grey" class="navbar navbar-expand navbar-dark text-center">
+            <nav style="position:sticky; " class="navbar navbar-expand navbar-dark text-center">
                 <div class="container">
 
-                    <a class="navbar-brand" href="#">A Love Story <i class="fa-solid fa-heart" id="heart"></i></a>
+                    <a class="navbar-brand" href="#">A Love Story <i class="fa-solid fa-heart"></i></a>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item mx-1">
-                                <a class="nav-link active" id="home" tabindex="-1" aria-disabled="true"><i
-                                        class="fa-solid fa-home"></i></a>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home" href="home.html" tabindex="-1"
+                                    aria-disabled="true"><i class="fa-solid fa-home"></i></a>
                             </li>
 
-                            <li class="nav-item mx-1">
-                                <a class="nav-link" aria-current="page" href="bday.html" target="_blank"><i
-                                        class="fa-solid fa-cake-candles" id="cake"></i>
-                                </a>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page"><i class="fa-solid fa-cake-candles"></i></a>
                             </li>
 
 
-                            <li class="nav-item mx-1">
+
+                            <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="index.html"><i
                                         class="fa-solid fa-arrow-right-to-bracket"></i></a>
                             </li>
@@ -82,11 +76,15 @@
 
             </nav>
         </header>
-        <!-- <div class=""><br></div> -->
+
+<<<<<<< HEAD
 
 
-
+<<<<<<< HEAD
+        <!-- music -->
+=======
 <!-- music -->
+>>>>>>> 6d40547015b56f6b815375e13569cdda303cdc88
 
         <div class="container mb-5" id="music">
             <h5 class="display-5 my-5 text-center hh">Music Player</h5>
@@ -95,6 +93,13 @@
                 <div class="row">
                     <div class="">
                         <div class="music-container m-auto my-5" id="music-container">
+=======
+        <div class="container mt-5" id="music">
+            <div class="row mx-lg-5">
+                <div class="row d-flex">
+                    <div class="col-lg-6 m-auto px-xl-5">
+                        <div class="music-container" id="music-container">
+>>>>>>> parent of 53884a0 (F)
                             <div class="music-info">
                                 <h3 id="title"></h3>
                                 <p id="artist" class="text-secondary"></p>
@@ -126,32 +131,27 @@
                             </div>
 
                         </div>
-                        <div class="container text-center text-white mb-4">
-                            <button class="btn btn-sm btn-primary me-2 my-2" id="viewToggle">View Playlist <span
-                                    class="btn btn-sm text-white fa-solid fa-angle-right"></span></button>
-                            <a class="btn btn-sm btn-success"
-                                href="https://open.spotify.com/playlist/41cNHnADfxpYfAxVmcjvm8?si=11d2950f1a844992"
-                                target="_blank">Open in Spotify <span
-                                    class="fa-solid text-white btn btn-sm fa-arrow-up-right-from-square"></span></a>
+                        <div class="container text-white" >
+                            <div id="viewToggle">View Playlist <span class="btn btn-sm text-white fa-solid fa-angle-right"></span></div>
                         </div>
                     </div>
 
                     <!-- Playlist -->
-                    <div class="playlist">
+                    <div class="col-lg-6 col-12 playlist">
                         <div class="col mx-xl-5 mx-lg-0 list">
+                            
 
-
-                            <div id="playlistAll" class="mt-3">
-
-                                <div class="d-flex " id="0" onclick="clicked(this.id)">
+                            <div id="playlistAll">
+                               
+                                <div class="d-flex mb-4" id="0" onclick="clicked(this.id)">
                                     <img src="images/Bae.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Bae</h5>
                                         <p class="my-auto text-secondary">Anirudh Ravichandar</p>
                                     </div>
                                 </div>
-
-                                <div class="d-flex " id="1" onclick="clicked(this.id)">
+                                
+                                <div class="d-flex mb-4" id="1" onclick="clicked(this.id)">
                                     <img src="images/Dhimu Dhimu.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Dhimu Dhimu</h5>
@@ -159,7 +159,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="2" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="2" onclick="clicked(this.id)">
                                     <img src="images/En-Jeevan.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">En Jeevan</h5>
@@ -167,15 +167,15 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="3" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="3" onclick="clicked(this.id)">
                                     <img src="images/Ennadi-Maayavi-Nee.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Ennadi Maayavi Nee</h5>
                                         <p class="my-auto text-secondary">Santhosh Narayanan</p>
                                     </div>
                                 </div>
-
-                                <div class="d-flex " id="4" onclick="clicked(this.id)">
+    
+                                <div class="d-flex mb-4" id="4" onclick="clicked(this.id)">
                                     <img src="images/Idhazhin-oram.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Idhazhin oram</h5>
@@ -183,7 +183,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="5" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="5" onclick="clicked(this.id)">
                                     <img src="images/Innum-Konjam-Neram.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Innum Konjam Neram</h5>
@@ -191,15 +191,15 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="6" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="6" onclick="clicked(this.id)">
                                     <img src="images/Kannazhaga.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Kannazhaga</h5>
                                         <p class="my-auto text-secondary">Anirudh Ravichandar</p>
                                     </div>
                                 </div>
-
-                                <div class="d-flex " id="7" onclick="clicked(this.id)">
+                                
+                                <div class="d-flex mb-4" id="7" onclick="clicked(this.id)">
                                     <img src="images/Maalai-Mangum-Neram.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Maalai Mangum Neram</h5>
@@ -207,15 +207,15 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="8" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="8" onclick="clicked(this.id)">
                                     <img src="images/Manamaganin-Sathiyam.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
-                                        <h5 class="my-auto">Manamaganin Sathiyam</h5>
+                                        <h5 class="my-auto">Manamaganin-Sathiyam</h5>
                                         <p class="my-auto text-secondary">A. R. Rahman</p>
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="9" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="9" onclick="clicked(this.id)">
                                     <img src="images/Marakavillayae.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Marakavillayae</h5>
@@ -223,7 +223,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="10" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="10" onclick="clicked(this.id)">
                                     <img src="images/Mehabooba.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Mehabooba</h5>
@@ -231,7 +231,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="11" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="11" onclick="clicked(this.id)">
                                     <img src="images/Mellinamae-Mellinamae.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Mellinamae Mellinamae</h5>
@@ -239,7 +239,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="12" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="12" onclick="clicked(this.id)">
                                     <img src="images/Munbe-Va.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Munbe-Va</h5>
@@ -247,7 +247,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="13" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="13" onclick="clicked(this.id)">
                                     <img src="images/Naalu-Nimisam.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Naalu Nimisam</h5>
@@ -255,7 +255,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="14" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="14" onclick="clicked(this.id)">
                                     <img src="images/Naan-Nee.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Naan Nee</h5>
@@ -263,7 +263,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="15" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="15" onclick="clicked(this.id)">
                                     <img src="images/Naan-Un.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Naan Un</h5>
@@ -271,7 +271,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="16" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="16" onclick="clicked(this.id)">
                                     <img src="images/Neeyum-Naanum-Anbe.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Neeyum Naanum Anbe</h5>
@@ -279,7 +279,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="17" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="17" onclick="clicked(this.id)">
                                     <img src="images/Nenjukkul-Peithidum.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Nenjukkul Peithidum</h5>
@@ -287,7 +287,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="18" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="18" onclick="clicked(this.id)">
                                     <img src="images/NewYork-Nagaram.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">NewYork Nagaram</h5>
@@ -295,7 +295,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="19" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="19" onclick="clicked(this.id)">
                                     <img src="images/Oru-Devadhai.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Oru Devadhai</h5>
@@ -303,7 +303,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="20" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="20" onclick="clicked(this.id)">
                                     <img src="images/Pachchai-Nirame.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Pachchai Nirame</h5>
@@ -311,7 +311,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="21" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="21" onclick="clicked(this.id)">
                                     <img src="images/Partha-Muthal.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Partha Muthal</h5>
@@ -319,7 +319,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="22" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="22" onclick="clicked(this.id)">
                                     <img src="images/Pirai-Thedum.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Pirai Thedum</h5>
@@ -327,7 +327,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="23" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="23" onclick="clicked(this.id)">
                                     <img src="images/Pookal-Pookum.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Pookal Pookum</h5>
@@ -335,7 +335,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="24" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="24" onclick="clicked(this.id)">
                                     <img src="images/Snehidhane.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Snehidhane</h5>
@@ -343,7 +343,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="25" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="25" onclick="clicked(this.id)">
                                     <img src="images/Suttum-Vizhi.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Suttum Vizhi</h5>
@@ -351,7 +351,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="26" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="26" onclick="clicked(this.id)">
                                     <img src="images/Thaarame-Thaarame.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Thaarame Thaarame</h5>
@@ -359,7 +359,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="27" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="27" onclick="clicked(this.id)">
                                     <img src="images/Thalli-Pogathey.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Thalli-Pogathey</h5>
@@ -367,7 +367,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="28" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="28" onclick="clicked(this.id)">
                                     <img src="images/Un-Vizhigalil.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Un Vizhigalil</h5>
@@ -375,7 +375,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex " id="29" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="29" onclick="clicked(this.id)">
                                     <img src="images/Uyire-Un-Uyirena.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Uyire Un Uyirena</h5>
@@ -383,7 +383,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex mb-" id="30" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="30" onclick="clicked(this.id)">
                                     <img src="images/Vaseegara.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Vaseegara</h5>
@@ -391,7 +391,7 @@
                                     </div>
                                 </div>
 
-                                <div class="d-flex 2" id="31" onclick="clicked(this.id)">
+                                <div class="d-flex mb-4" id="31" onclick="clicked(this.id)">
                                     <img src="images/Yaanji.jpg" alt="" class="vinyl mx-4">
                                     <div class="col">
                                         <h5 class="my-auto">Yaanji</h5>
@@ -406,6 +406,7 @@
             </div>
         </div>
 
+<<<<<<< HEAD
         <hr>
         <style>
             #carouselExampleFade3 img {
@@ -418,14 +419,26 @@
         </style>
         <!-- memories -->
         <div class="container my-5">
+<<<<<<< HEAD
+            <h5 class="display-5 my-3 text-center hh">Pictures of Us</h5>
+=======
             <h5 class="display-5 my-3 text-center hh">Memorable pics</h5>
+>>>>>>> 6d40547015b56f6b815375e13569cdda303cdc88
             <div class="my-3"><br></div>
 
             <figure class="bg-white px-3 pt-3 pb-1 rounded m-auto"
                 style="border-left: .40rem solid #a34e78; width: 86vw;">
                 <blockquote class="blockquote">
                     <p>
+<<<<<<< HEAD
+                        <i class="fa-solid  fa-quote-left"></i> உன்னை ஒரு
+                        பாதி என்று நினைக்காமல்
+                        அத்தனையும் நீயென
+                        நினைப்பதிலே நாளெல்லாம்
+                        தீர்ந்தாலே சந்தோஷம்...
+=======
                         <i class="fa-solid  fa-quote-left"></i>நகராமல் இந்த நொடி நீள எந்தன் அடி நெஞ்சம் ஏங்குதே...
+>>>>>>> 6d40547015b56f6b815375e13569cdda303cdc88
                     </p>
                 </blockquote>
             </figure>
@@ -504,8 +517,16 @@
                 style="border-left: .40rem solid #a34e78; width: 86vw;">
                 <blockquote class="blockquote">
                     <p>
+<<<<<<< HEAD
+                        <i class="fa-solid fa-quote-left"></i> எதுவரை போகலாம் என்று நீ
+                        சொல்ல வேண்டும் என்றுதான்
+                        விடாமல் கேட்கிறேன்
+                        தேன் முத்தங்கள் மட்டுமே போதும் என்று சொல்வதால்
+                        தொடாமல் போகிறேன்                        
+=======
                         <i class="fa-solid fa-quote-left"></i> உன்னோட நடக்கின்ற சிறு தூரம் கிடைக்கின்ற சில நேரம் என்
                         வாழ்வின் வரமாகவே...
+>>>>>>> 6d40547015b56f6b815375e13569cdda303cdc88
                     </p>
                 </blockquote>
             </figure>
@@ -686,6 +707,11 @@
             </div>
         </div>
         <hr>
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 6d40547015b56f6b815375e13569cdda303cdc88
         <!-- used -->
         <div class="container my-5">
             <h5 class="display-5 my-3 text-center hh">My Chellam Used</h5>
@@ -759,6 +785,31 @@
         </div>
 
         <hr>
+<<<<<<< HEAD
+
+
+        <!-- videos status -->
+        <div class="container my-5">
+            <h5 class="display-5 text-center hh">Love❤️</h5>
+            <div class="my-3"><br></div>
+            <div class="card text-center m-auto" style="width: 23rem;">
+                <div class="card-body">
+                  <p class="card-text"><b class="text-lg">You : </b> Show me your Love!!!</p>
+                  <p class="card-text"><b class="text-lg">Me : </b> Hold my playlist...♥</p>
+                </div>
+                <!-- <hr style="color: grey;"> -->
+                <!-- <img src="..." class="card-img-bottom" alt="..."> -->
+                <video class="card-img-bottom" controls>
+                    <source src="1.mp4" type="video/mp4">
+                    <source src="1.ogg" type="video/ogg">
+                    <!-- Your browser does not support the video tag. -->
+                  </video>
+              </div>
+        </div>
+        <hr>
+
+=======
+>>>>>>> 6d40547015b56f6b815375e13569cdda303cdc88
         <!-- places -->
         <div class="container my-5">
             <p class="display-5 text-center hh">Every Locations</p>
@@ -920,8 +971,14 @@
         </div>
         <hr>
 
+<<<<<<< HEAD
+        <!-- toast -->
+        <div class="toast m-auto my-5 text-center" data-bs-autohide="false" id="liveToast" role="alert"
+            aria-live="assertive" aria-atomic="true">
+=======
 
         <div class="toast m-auto my-5 text-center" data-bs-autohide="false" id="liveToast" role="alert" aria-live="assertive" aria-atomic="true">
+>>>>>>> 6d40547015b56f6b815375e13569cdda303cdc88
             <div class="toast-body py-2">
                 Hey Bae♥!!! Check out the special page for you...
                 <div class="pt-2 border-top">
@@ -933,13 +990,23 @@
 
         <script>
             toast();
+<<<<<<< HEAD
+            function toast() {
+=======
              function toast() {
+>>>>>>> 6d40547015b56f6b815375e13569cdda303cdc88
                 var myAlert = document.getElementById('liveToast');//select id of toast
                 var bsAlert = new bootstrap.Toast(myAlert);//inizialize it
                 bsAlert.show();//show it
             }
+<<<<<<< HEAD
+        </script>
+=======
       </script>
+>>>>>>> 6d40547015b56f6b815375e13569cdda303cdc88
 
+=======
+>>>>>>> parent of 53884a0 (F)
         <script src="dashboard.js"></script>
 
         <!-- footer -->
@@ -951,6 +1018,9 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 
 </body>
 
