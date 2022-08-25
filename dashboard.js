@@ -232,14 +232,14 @@ let show = false;
 
 document.getElementById("viewToggle").onclick = () => {
 	if (!show) {
-		$("#playlistAll").fadeIn(1000);
+		$("#playlistAll").fadeIn(750);
 		// document.getElementById("playlistAll").style.display = "block";
 		document.getElementById("viewToggle").innerHTML = "Hide Playlist <span class='btn btn-sm text-white fa-solid fa-angle-down'></span>";
 		// display.getElementById("playlistAll").style.transition = "width 2s";
 		show = true;
 	}
 	else {
-		$("#playlistAll").fadeOut(1000);
+		$("#playlistAll").fadeOut(750);
 		// document.getElementById("playlistAll").style.display = "none";
 		document.getElementById("viewToggle").innerHTML = "View Playlist <span class='btn btn-sm text-white fa-solid fa-angle-right'></span>";
 		show = false;
