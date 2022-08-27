@@ -225,8 +225,8 @@ body {
 }
 
 .hh {
-    /* color: #06599b; */
-    background: linear-gradient(to right,#04d2d5 10%,#01ef96 50%,#04d2d5 90%);
+    /* color: #06599b;#01ef96  */
+    background: linear-gradient(to right,#04d2d5 10%, lightgreen 50%,#04d2d5 90%);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
