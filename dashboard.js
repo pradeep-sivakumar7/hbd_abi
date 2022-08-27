@@ -1,4 +1,5 @@
 $(window).on('load', function () {
+	$('#liveToast1').fadeOut(500);
 	$("#loader").fadeOut(1000);
 	$("#content").fadeIn(1000);
 });
@@ -264,7 +265,7 @@ setInterval(() => {
 	}
 }, 750)
 
-setInterval(()=> {
-	const randomColor = Math.floor(Math.random()*16777215).toString(16);
-	document.getElementById("hea").style.color = "#" + randomColor;    
-},1000)
+setInterval(() => {
+	const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+	document.getElementById("hea").style.color = "#" + randomColor;
+}, 1000)
