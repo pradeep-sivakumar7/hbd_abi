@@ -263,7 +263,7 @@ setInterval(() => {
 		h.style.color = "white";
 		g = true;
 	}
-}, 750)
+}, 500)
 
 setInterval(() => {
 	const randomColor = Math.floor(Math.random() * 16777215).toString(16);
