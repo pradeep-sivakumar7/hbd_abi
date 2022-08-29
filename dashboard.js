@@ -112,10 +112,18 @@ function loadSong(song) {
 function playSong() {
 	musicContainer.classList.add('play');
 
+	let summa = true;
+
+	if (summa) {
+		document.getElementById('program').classList.add('my-4');
+		document.getElementById('program').innerHTML = '<br><br>';
+		summa = false;
+	}
+
 	playBtn.querySelector('i.fas').classList.remove('fa-play');
 	playBtn.querySelector('i.fas').classList.add('fa-pause');
-	document.getElementById('program').classList.add('my-4');
-	document.getElementById('program').innerHTML = '<br><br>';
+
+	$("#program").fadeIn(500);
 	audio.play();
 }
 
@@ -126,8 +134,9 @@ function pauseSong() {
 
 	playBtn.querySelector('i.fas').classList.add('fa-play');
 	playBtn.querySelector('i.fas').classList.remove('fa-pause');
-	document.getElementById('program').classList.remove('my-4');
-	document.getElementById('program').innerHTML = '';
+	// document.getElementById('program').classList.remove('my-4');
+	// document.getElementById('program').innerHTML = '';
+	$("#program").fadeOut(500);
 	audio.pause();
 }
 
