@@ -4,6 +4,12 @@ $(window).on('load', function () {
 	$("#content").fadeIn(1000);
 });
 
+// setTimeout(()=>{
+// 	$('#liveToast1').fadeOut(500);
+//  	$("#loader").fadeOut(1000);
+// 	$("#content").fadeIn(1000);
+// },3000)
+
 //music player
 const musicContainer = document.getElementById('music-container');
 const playBtn = document.getElementById('play');
@@ -108,7 +114,8 @@ function playSong() {
 
 	playBtn.querySelector('i.fas').classList.remove('fa-play');
 	playBtn.querySelector('i.fas').classList.add('fa-pause');
-
+	document.getElementById('program').classList.add('my-4');
+	document.getElementById('program').innerHTML = '<br><br>';
 	audio.play();
 }
 
@@ -119,7 +126,8 @@ function pauseSong() {
 
 	playBtn.querySelector('i.fas').classList.add('fa-play');
 	playBtn.querySelector('i.fas').classList.remove('fa-pause');
-
+	document.getElementById('program').classList.remove('my-4');
+	document.getElementById('program').innerHTML = '';
 	audio.pause();
 }
 
