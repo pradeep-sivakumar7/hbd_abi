@@ -1,14 +1,14 @@
-// $(window).on('load', function () {
-// 	$('#liveToast1').fadeOut(500);
-// 	$("#loader").fadeOut(1000);
-// 	$("#content").fadeIn(1000);
-// });
-
-setTimeout(()=>{
+$(window).on('load', function () {
 	$('#liveToast1').fadeOut(500);
- 	$("#loader").fadeOut(1000);
+	$("#loader").fadeOut(1000);
 	$("#content").fadeIn(1000);
-},3000)
+});
+
+// setTimeout(()=>{
+// 	$('#liveToast1').fadeOut(500);
+//  	$("#loader").fadeOut(1000);
+// 	$("#content").fadeIn(1000);
+// },3000)
 
 //music player
 const musicContainer = document.getElementById('music-container');
