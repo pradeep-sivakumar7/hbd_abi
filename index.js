@@ -23,7 +23,7 @@ function doIt() {
     let pin = document.getElementById("pin").value;
     let ch = user + pin;
 
-    if (ch == 'papi2308') {
+    if (ch == 'papi0609') {
         user = "";
         pin = "";
         document.getElementById("next").style.color = "white";
@@ -51,7 +51,7 @@ function doIt() {
             }, 2000);
         }
 
-        if (pin != 2308) {
+        if (pin != 0609) {
             document.getElementById("pin").value = "";
             document.getElementById("next").classList.add("disabled");
             document.getElementById("rem").classList.remove("mb-3");
